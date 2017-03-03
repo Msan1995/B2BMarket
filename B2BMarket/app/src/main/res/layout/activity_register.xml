@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.flairinfosystems.b2bmarket.activities.RegisterActivity"
+    android:background="@color/colorPrimary">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_register"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/main_heading_text"
+            android:id="@+id/register"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/white"
+            />
+
+            <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profileimg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/accountimg1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+
+
+            />
+
+        <TextView
+            android:id="@+id/uploadtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TaptoUploadImage"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            >
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/company" android:textColorHint="@android:color/white"
+            >
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/CompanyName"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email" android:textColorHint="@android:color/white"
+            >
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/EmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password" android:textColorHint="@android:color/white"
+
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+                android:hint="@string/Password"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmpass"
+            android:textColorHint="@android:color/white"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+                android:hint="@string/ConfirmPassword"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+
+            android:text="@string/Submit"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    </RelativeLayout>
+</ScrollView>
+</android.support.design.widget.CoordinatorLayout>
